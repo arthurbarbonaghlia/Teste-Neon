@@ -3,7 +3,7 @@ Mobile - Automação de aplicativo de Cadastro de Clientes
 
 #Passos para execução e observações:
 
-  O teste solicitava a ceiação de testes via calabash, porém estou com um ambiente novo em Windows e me deparei com diversos problemas para criação do ambiente em calabash. Alterei versões do ruby, da gem calabash-android, dentre outras várias outras tentativas.
+  O teste solicitava a criação de testes via calabash, porém estou com um ambiente novo em Windows e me deparei com diversos problemas para criação do ambiente em calabash. Alterei versões do ruby, da gem calabash-android, dentre outras várias outras tentativas.
   Assim, fiz o teste pelo Appium, mudei o framework, mas utilizei os demais pré requisitos solicitados;
   
 
