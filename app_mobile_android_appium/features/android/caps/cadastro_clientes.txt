@@ -1,0 +1,5 @@
+[caps]
+deviceName =  "Nexus 6 API 28"
+platformName = "Android"
+app = "/Users/Arthur/Desktop/automacao/neon/app_mobile_android_appium/features/android/app/Cadastro_de_Clientes.apk"
+appPackage = "br.com.wagner.cadastrodeclientes"

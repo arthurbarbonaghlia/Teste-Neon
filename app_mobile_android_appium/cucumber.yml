@@ -1,0 +1,2 @@
+android: PLATFORM=android 
+# report: -p default -f html -o report/relatorio.html

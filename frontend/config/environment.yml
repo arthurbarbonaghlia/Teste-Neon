@@ -1,0 +1,17 @@
+local:
+  neon-web: ''
+
+
+qa:
+  neon-web: ''
+
+
+staging:
+  neon-web: ''
+
+
+
+prod:
+  neon-web: 'https://neon.com.br/'
+  neon-web-perguntas: 'https://neon.com.br/perguntas'
+

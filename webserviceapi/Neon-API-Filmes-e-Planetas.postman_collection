@@ -1,0 +1,148 @@
+{
+	"info": {
+		"_postman_id": "927e98eb-3e13-4cd4-80d0-d7e8e90d348c",
+		"name": "#Neon-API-Filmes-e-Planetas",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Films",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "40a67e3d-7f22-4e13-a912-25a8446c08cb",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;",
+							"",
+							"var jsonData = pm.response.json();",
+							"",
+							"var variavelLocal = [];",
+							"",
+							"for(let item in jsonData.results) {",
+							"    // Variavel declarada acima...",
+							"    variavelLocal.push(jsonData.results[item].title);",
+							"}",
+							"",
+							"// Variavel declarada como variavel Global e atribuindo o valor da variavelLocal",
+							"pm.globals.set(\"results\", variavelLocal);",
+							"    ",
+							"// Mostrando tudo o que foi armazenado na variavel local",
+							"console.log(\"Variavel local: \", variavelLocal);",
+							"",
+							"// Mostrar apenas um item da variavel local para exemplificar",
+							"console.log(\"Item 1 (Indice 0): \", variavelLocal[0]);",
+							"",
+							"// Mostrando tudo o que foi armazenado na variavel Global",
+							"console.log(\"Variavel global: \", pm.globals.get(\"results\"));"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://swapi.co./api/films/",
+					"protocol": "http",
+					"host": [
+						"swapi",
+						"co"
+					],
+					"path": [
+						"api",
+						"films",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Planets",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "1c34cf59-0e82-45ca-ae86-e79cdc68a5ff",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;",
+							"",
+							"",
+							"const film = pm.response.json();",
+							"",
+							"let randomPlanet = 0, ",
+							"    localVariable = [];",
+							"",
+							"for(let item in film.results) {",
+							"    // Alimentando a variável \"localVariable\" declarada acima",
+							"    localVariable.push(film.results[item].title);",
+							"}",
+							"",
+							"// Trecho apenas para ilustrar as opções para armazenar os dados - Início",
+							"",
+							"// Variavel declarada como variavel Global e atribuindo o valor da localVariable",
+							"pm.globals.set(\"results\", localVariable);",
+							"    ",
+							"// Mostrando tudo o que foi armazenado na variavel local",
+							"console.log(\"Variavel local: \", localVariable);",
+							"",
+							"// Mostrar apenas um item da variavel local para exemplificar",
+							"console.log(`Item 1 (Indice 0): ${localVariable[0]}`);",
+							"",
+							"// Mostrando tudo o que foi armazenado na variavel Global",
+							"console.log(\"Variavel global: \", pm.globals.get(\"results\"));",
+							"",
+							"// Trecho apenas para ilustrar as opções para armazenar os dados - Fim",
+							"",
+							"// Vamos fazer o request inicial para ver todos os planetas",
+							"pm.sendRequest(\"http://swapi.co./api/planets\", (err, response) => {",
+							"    const planets = response.json();",
+							"    ",
+							"    console.log(`Total de planetas: ${planets.count}`);",
+							"    ",
+							"    // Dentre todos os planetas, vamos pegar um aleatório",
+							"    randomPlanet = Math.floor(Math.random() * planets.count) + 1;",
+							"    ",
+							"    // Vamos fazer o request passando um valor aleatório que seja superior ao armazenado.",
+							"    pm.sendRequest(`http://swapi.co./api/planets/${planets.count + 1} `, (err, response) => {",
+							"        const planet = response.json();",
+							"",
+							"        ",
+							"    // Vamos fazer o request para o planeta aleatório",
+							"    pm.sendRequest(`http://swapi.co./api/planets/${randomPlanet}`, (err, response) => {",
+							"        const planet = response.json();",
+							"        ",
+							"        console.log(`Id do Planeta: ${randomPlanet}`);",
+							"        console.log(`Nome: ${planet.name}`);",
+							"    });",
+							"",
+							"    });",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://swapi.co./api/planets/",
+					"protocol": "http",
+					"host": [
+						"swapi",
+						"co"
+					],
+					"path": [
+						"api",
+						"planets",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
