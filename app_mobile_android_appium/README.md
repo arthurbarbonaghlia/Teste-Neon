@@ -14,6 +14,8 @@ Mobile - Automação de aplicativo de Cadastro de Clientes
 Abrir a pasta referente à "app_mobile_android_appium" no editor de texto.
 
 ##Executar o comando Bundle install##
+##Iniciar o servidor Appium##
+
 
 Foi criado um cenário que realiza a validação de:
 
