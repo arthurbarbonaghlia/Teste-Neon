@@ -22,6 +22,8 @@ Foi criado um cenário que realiza a validação de:
 
  - Cadastro de cliente com sucesso;
  - Consulta de cadastro de clientes
+
+#Executar o comando cucumber##
  
 O projeto foi estruturado com o "Page objecs" tendo em vista melhor manutenção no código, também um código mais limpo e melhor estruturado através das classes metodos e atributos.
 
