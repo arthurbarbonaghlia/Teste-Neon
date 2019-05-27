@@ -9,7 +9,8 @@ Automacao Backend, Frontend e Mobile
 
 3 - Para acessar os testes referentes ao Backend, clicar na pasta "app_mobile_android_appium";
 
-    - Dentro de cada uma delas terá instruções como executar os testes dos projetos.
+        - Dentro de cada uma delas terá instruções como executar os testes dos projetos.
+        
 Preparação(requisitos) de ambiente:
 
 1 - Ruby instalado;
