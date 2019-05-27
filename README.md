@@ -3,7 +3,7 @@ Automacao Backend, Frontend e Mobile
 
 ###Clicar no botão "Clone or Download" e realizar o download dos projetos###
 
-1 - Para acessar os testes referentes ao Backend, clicar na pasta "app_mobile_android_appium";
+1 - Para acessar os testes referentes ao Backend, clicar na pasta "webserviceapi";
 
 2 - Para acessar os testes referentes ao Frontend, clicar na pasta "frontend";
 
