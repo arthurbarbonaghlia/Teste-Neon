@@ -19,11 +19,11 @@ Abrir a pasta referente à "frontend" no editor de texto.
 
 ##Executar o comando cucumber##
 Obs. Foram criadas tags para execução:
-     @login_negativo
+ @login_negativo
 
-     @perguntas
+ @perguntas
 
-     @status
+ @status
 
      
      #Serão gerados evidências e relatório da execução dos testes"     
