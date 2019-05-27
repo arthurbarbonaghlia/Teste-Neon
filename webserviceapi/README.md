@@ -29,7 +29,7 @@ Existe também a opção de execução via linha de comando:
 Isso para poder usar futuramente se preciso.
  - Podem ser verificados na aba teste do Postman.
 
-
+Fico a disposição para quaisquer esclarecimentos.
 
 
  
