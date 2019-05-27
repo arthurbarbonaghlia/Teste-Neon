@@ -14,7 +14,7 @@ Foram criados duas chamadas GET:
  - Consulta de Filmes
  - Consulta de Planetas
  
-  - Os teses podem ser executados via Postman (Send), os testes serão executados automaticamente. Verificar na aba "tests"
+Os teses podem ser executados via Postman (Send), os testes serão executados automaticamente. Verificar na aba "tests"
   - Também a opção de execução via Runner
   - Existe também a opção de execução via linha de comando:
     - Acessar a pasta onde foi baixado o arquivo "Neon-API-Filmes-e-Planetas.postman_collection"
