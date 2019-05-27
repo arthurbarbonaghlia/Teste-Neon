@@ -10,12 +10,19 @@ Abrir a pasta referente à "frontend" no editor de texto.
   - "../frontend/tests"
 
   ##Executar o comando Bundle install##
-   
+
   #Observações.:
   Foram criados 3 features com 1 cenário cada uma:
      - Login com sem sucesso  ;
      - Perguntas;
      - Status serviços.
+
+##Executar o comando cucumber##
+Obs. Foram criadas tags para execução:
+     @login_negativo
+     @perguntas
+     @status
+
      
      #Serão gerados evidências e relatório da execução dos testes"     
      
