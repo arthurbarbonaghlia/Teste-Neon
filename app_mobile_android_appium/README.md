@@ -7,13 +7,14 @@ Mobile - Automação de aplicativo de Cadastro de Clientes
   Assim, fiz o teste pelo Appium, mudei o framework, mas utilizei os demais pré requisitos solicitados;
   
 
- Não realizei as automação da edição de cliente pois não consegui simular no aplicativo, apresentou um problema.
+ Não realizei as automação da edição de cliente pois não consegui simular no aplicativo, apresentou um problema ao acessar a edição.
 
 #Passos para execução:
 
 Abrir a pasta referente à "app_mobile_android_appium" no editor de texto.
 
 ##Executar o comando Bundle install##
+
 ##Iniciar o servidor Appium##
 
 
