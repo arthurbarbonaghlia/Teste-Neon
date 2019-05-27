@@ -27,7 +27,7 @@ Existe também a opção de execução via linha de comando:
 
 ##Foram criados diversos cenários para armazenar dados, mostrar um item da variavel, chamar um numero randomico, etc.
 Isso para poder usar futuramente se preciso.
- - Pede ser verificado na aba teste do Postman.
+ - Podem ser verificados na aba teste do Postman.
 
 
 
